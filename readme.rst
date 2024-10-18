@@ -1,71 +1,93 @@
-###################
-What is CodeIgniter
-###################
+Implementación de un Sistema Cliente-Servidor
+============================================
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Este proyecto consiste en la implementación de un sistema cliente-servidor utilizando sockets en PHP y el framework CodeIgniter. El objetivo es permitir la comunicación en tiempo real entre el cliente y el servidor, proporcionando una comprensión práctica de la arquitectura distribuida y la programación de sockets.
 
-*******************
-Release Information
-*******************
+Contenido
+---------
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+1. Introducción
+2. Objetivos
+   - Objetivo General
+   - Objetivos Específicos
+3. Marco Teórico
+   - Arquitectura Cliente-Servidor
+   - Programación de Sockets en PHP
+   - Uso de Frameworks como CodeIgniter
+4. Desarrollo
+   - Requisitos Previos
+   - Materiales Utilizados
+   - Procedimiento
+5. Resultados
+6. Conclusiones
+7. Recomendaciones
+8. Bibliografía
 
-**************************
-Changelog and New Features
-**************************
+Introducción
+------------
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+El proyecto se centra en la creación de una arquitectura cliente-servidor que permita la comunicación en tiempo real mediante sockets, destacando su importancia en la construcción de aplicaciones distribuidas y la transferencia de datos en tiempo real.
 
-*******************
-Server Requirements
-*******************
+Objetivos
+---------
 
-PHP version 5.6 or newer is recommended.
+**Objetivo General:**
+Implementar una arquitectura cliente-servidor básica para la comunicación en tiempo real.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+**Objetivos Específicos:**
+- Configurar el entorno de desarrollo con XAMPP/WAMP y CodeIgniter.
+- Implementar un servidor con sockets para responder a las solicitudes de los clientes.
+- Desarrollar un cliente en PHP que se conecte y comunique efectivamente con el servidor.
+- Integrar los componentes en CodeIgniter para una aplicación modular.
+- Realizar pruebas para verificar la funcionalidad del sistema.
 
-************
-Installation
-************
+Marco Teórico
+-------------
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+**Arquitectura Cliente-Servidor:** Modelo que separa responsabilidades entre el servidor y los clientes, facilitando la distribución de tareas.
 
-*******
-License
-*******
+**Programación de Sockets en PHP:** Permite la comunicación bidireccional en la red mediante funciones como `socket_create()`, `socket_bind()`, y `socket_send()`.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+**Uso de CodeIgniter:** Framework basado en el patrón MVC que facilita el desarrollo modular y escalable de aplicaciones web.
 
-*********
-Resources
-*********
+Desarrollo
+----------
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+**Requisitos Previos:**
+- Conocimientos en PHP y arquitectura cliente-servidor.
+- Familiaridad con CodeIgniter.
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+**Materiales Utilizados:**
+- Software: XAMPP/WAMP, CodeIgniter.
+- Herramientas: Editor de código, navegador web.
 
-***************
-Acknowledgement
-***************
+**Procedimiento:**
+1. Configuración del entorno de desarrollo.
+2. Implementación del servidor con sockets en PHP.
+3. Configuración de un servidor WebSocket con Ratchet.
+4. Desarrollo del frontend en JavaScript y HTML.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Resultados
+----------
+
+Se logró implementar un sistema de comunicación en tiempo real con múltiples clientes conectados a un servidor central. La aplicación permite enviar y recibir mensajes, demostrando el uso efectivo de la arquitectura cliente-servidor.
+
+Conclusiones
+------------
+
+El proyecto mejoró la comprensión de la programación distribuida y la arquitectura cliente-servidor. Se destacó la importancia de la separación de responsabilidades y la escalabilidad del sistema.
+
+Recomendaciones
+---------------
+
+- Implementar un manejo avanzado de errores y mejorar la seguridad en la transmisión de datos.
+- Evaluar el desempeño en diferentes entornos de red.
+- Optimizar la escalabilidad y explorar otros frameworks.
+
+Bibliografía
+------------
+
+- CodeIgniter. https://codeigniter.com/download
+- Composer. https://getcomposer.org/download/
+- PHP. https://www.php.net/manual/es/book.sockets.php
+    
